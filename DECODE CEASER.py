@@ -106,7 +106,7 @@ def Eok():
             OutputtingcoEncode()
         elif not Valid2:
             ShiftNum.delete(0,END)
-            tk.messagebox.showerror("Error", "\nNumber to be shifted cannot me more than 25")
+            tk.messagebox.showerror("Error", "\nNumber to be shifted cannot me more than 25 and less than 1")
 
         
     elif not Valid:
@@ -249,12 +249,14 @@ def RandomShift():
 # ------------------------------------------------------------
 #def Select():
 def ValidationRnd():
+    valid2  = False
     if num>25:
         valid2  = False
     elif num>1 and num<=25:
         valid2 = True
     return valid2
 def validationNoShift():
+    valid3 = False
     if not shiftstate:
         valid3 = False
     else:
@@ -332,6 +334,7 @@ root.mainloop()
 
 
         
+
 
 
 
