@@ -82,6 +82,7 @@ def d_ecode():
 def Eok():
     global userInput
     global num
+    num = 0
     # ------------------------------------------------------------
     numx= ShiftNum.get()
     ShiftNum.delete(0,END)
@@ -334,6 +335,7 @@ root.mainloop()
 
 
         
+
 
 
 
